@@ -1,0 +1,26 @@
+.czlowiek {
+    height: 300px;
+    width: 130px;
+    display: block;
+    position: absolute;
+    background-color: bisque;
+    
+}
+
+.pilka {
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: cadetblue;  
+}
+
+.kij {
+    height: 250px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    background-color: coral;
+    
+}
