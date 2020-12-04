@@ -1,11 +1,11 @@
 .czlowiek {
-    height: 300px;
-    width: 130px;
+    height: 500px;
+    width: 170px;
     display: block;
     position: absolute;
     background-color: bisque;
-    animation: push_move 0.5s infinite;
-    
+    bottom: 50px;
+    left: 300px;
 }
 
 .pilka {
@@ -14,25 +14,62 @@
     display: block;
     position: absolute;
     border-radius: 50%;
-    background-color: cadetblue;  
+    background-color: cadetblue;
+    animation: ball_horizontal 5s infinite,
+        ball_vertical 5s infinite;
 }
 
 .kij {
-    height: 250px;
+    height: 300px;
     width: 30px;
     display: block;
     position: absolute;
     background-color: coral;
+    right: 200px;
+    bottom: 100px;
     
 }
 
-@keyframes push_move{
+@keyframes ball_horizontal {
     0% {
-        bottom: 50px;
-        left: 300px;
+        left: 470px;
+    }
+    50% {
+        left: 1150px
     }
     100% {
-        bottom: 50px;
-        left: 400px;
+        left: 470px;
     }
 }
+
+@keyframes ball_vertical {
+    0% {
+        bottom: 300px;
+    }
+    25% {
+        bottom: 600px;
+    }
+    50% {
+        bottom: 300px;
+    }
+    75% {
+        bottom: 600px;
+    }
+    100% {
+        bottom: 300px;
+    }
+}
+
+@keyframes kij_move {
+    0% {
+        
+    }
+    100% {
+        right: 100px;
+        bottom: 100px;
+    }
+}
+
+
+
+
