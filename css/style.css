@@ -15,6 +15,8 @@
     display: block;
     position: absolute;
     border-radius: 50%;
+    bottom: 300px;
+    left: 420px;
     background-color: cadetblue;
     animation: ball_horizontal 4s,
         ball_vertical 4s;
@@ -40,10 +42,11 @@
         left: 420px;
     }
     50% {
-        left: 1177px
+        left: 1220px;
+/*        left: 1177px*/
     }
     100% {
-        left: 470px;
+        left: -100px;
     }
 }
 
@@ -58,10 +61,10 @@
         bottom: 300px;
     }
     75% {
-        bottom: 600px;
+        bottom: 660px;
     }
     100% {
-        bottom: 500px;
+        bottom: 640px;
     }
 }
 
