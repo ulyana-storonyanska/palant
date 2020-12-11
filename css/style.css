@@ -5,41 +5,42 @@
     position: absolute;
     background-color: bisque;
     bottom: 50px;
-    left: 300px;
+    left: 250px;
 }
 
 .pilka {
-    height: 100px;
-    width: 100px;
+    margin: 0;
+    height: 30px;
+    width: 30px;
     display: block;
     position: absolute;
     border-radius: 50%;
     background-color: cadetblue;
-    animation: ball_horizontal 5s infinite,
-        ball_vertical 5s infinite;
+    animation: ball_horizontal 4s,
+        ball_vertical 4s;
 }
 
 .kij {
+    margin: 0;
     height: 300px;
     width: 30px;
     display: block;
     position: absolute;
     background-color: coral;
-    animation: kij_move 3s infinite;
-    animation-delay: -2s;
-/*
     right: 200px;
     bottom: 100px;
-*/
+    animation-delay: 0.67s;
+    animation-name: kij_move;
+    animation-duration: 2s;
     
 }
 
 @keyframes ball_horizontal {
     0% {
-        left: 470px;
+        left: 420px;
     }
     50% {
-        left: 1150px
+        left: 1177px
     }
     100% {
         left: 470px;
@@ -50,8 +51,8 @@
     0% {
         bottom: 300px;
     }
-    25% {
-        bottom: 600px;
+    15% {
+        bottom: 550px;
     }
     50% {
         bottom: 300px;
@@ -67,6 +68,7 @@
 @keyframes kij_move {
     0% {
         transform: rotate(360deg);
+        transform-origin: bottom;
         right: 200px;
         bottom: 100px;
     }
